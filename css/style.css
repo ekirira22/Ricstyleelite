@@ -40,7 +40,7 @@ ul {
 /* Header **/
 
 header {
-    background: #98bf64;
+    background: #222222;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
@@ -109,7 +109,7 @@ header a:hover {
 #newsletter {
     padding: 15px;
     color: #ffffff;
-    background: #35424a
+    background: #222222;
 }
 
 #newsletter h1 {
@@ -127,7 +127,6 @@ header a:hover {
     width: 250px;
 }
 
-
 /* Boxes */
 
 #boxes {
@@ -135,14 +134,18 @@ header a:hover {
 }
 
 #boxes .box {
-    float: left;
     text-align: center;
-    width: 30%;
     padding: 10px;
 }
 
+.content {
+    float: right;
+}
+
 #boxes .box img {
-    width: 90px;
+    width: 350px;
+    height: 230px;
+    border-radius: 5%;
 }
 
 
@@ -209,4 +212,58 @@ footer {
         width: 100%;
         margin-bottom: 5px;
     }
+}
+
+.elevator {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  visibility: hidden;
+  background: rgba(0, 0, 0, .7);
+  background-image: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+       -o-transition: all .3s ease;
+          transition: all .3s ease;
+}
+.elevator.elevator-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+}
+.elevator .fa {
+  position: relative;
+  top: 12.5px;
+  left: 14.5px;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  -webkit-transition: all .3s ease;
+       -o-transition: all .3s ease;
+          transition: all .3s ease;
+}
+.elevator:hover {
+  background: rgba(0, 0, 0, .8);
+}
+.elevator:hover .fa {
+  top: 5px;
+  color: white;
+}
+@media (max-width: 368px) {
+  .elevator {
+    /* only show elevator on desktop screen */
+    display: none !important;
+  }
 }
