@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Affordable and professional web design">
-    <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Brad Traversy">
+    <meta name="description" content="Queenspark Guest House Nyeri">
+    <meta name="keywords" content="queenspark nyeri, guesthouse in nyeri, hotels in nyeri, queenspark guesthouse">
+    <meta name="author" content="Eric Kirira Maranga">
     <title>Queenspark Nyeri | Welcome</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script type="text/javascript" src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css">
@@ -19,19 +20,50 @@
 <body>
 
     <header>
-        <div class="container">
+       <div class="container text-center">
             <div id="branding">
                 <h1><span class="highlight">Queenspark</span> Guest House </h1>
             </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+      </header>
+
+
+
+<nav>
+    <div id='cssmenu'>
+          <ul>
+            <li class='active' id="home"><a href='#'>Home</a></li>
+             <li><a>Accomodation</a>
+                <ul>
+                   <!-- <li class='has-sub' id="services"><a href='#'>Rooms</a>
+                       <ul>
+                         <li><a href='#'>Room L</a></li>
+                         <li><a href='#'>Room R</a></li>
+                         <li><a href='#'>Room H</a></li>
+                         <li><a href='#'>Room G</a></li>
+                         <li><a href='#'>Room Y</a></li>
+                         <li><a href='#'>Room Z</a></li>
+                         <li><a href='#'>Room F</a></li>
+                         <li><a href='#'>Room O</a></li>
+                      </ul> We'll use this code again when advancing the website in later stages, has been commented out on css too
+                   </li> -->
+                   <li class='has-sub'><a href='#roomL'>Room L</a></li>
+                   <li class='has-sub'><a href='#roomR'>Room R</a></li>
+                   <li class='has-sub'><a href='#roomH'>Room H</a></li>
+                   <li class='has-sub'><a href='#roomG'>Room G</a></li>
+                   <li class='has-sub'><a href='#roomY'>Room Y</a></li>
+                   <li class='has-sub'><a href='#roomZ'>Room Z</a></li>
+                   <li class='has-sub'><a href='#roomF'>Room F</a></li>
+                   <li class='has-sub'><a href='#roomO'>Room O</a></li>
+                </ul>
+             </li>
+             <li id="services"><a href='#'>Services</a></li>
+             <li id="about"><a href='#'>About</a></li>
+
+          </ul>
+    </div>
+  </nav>
+
 
     <section id="showcase">
         <div class="container">
@@ -48,14 +80,14 @@
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div> -->
-        <div style="text-align:center">
+        <div style="text-align:center" id="accom">
             <h2>Accomodations we offer</h2>
         </div>
     </section>
 
     <section id="boxes">
         <div class="container">
-            <div class="box">
+            <div id="roomL" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room L</h3>
@@ -63,7 +95,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomR" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room R</h3>
@@ -71,7 +103,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomH" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room H</h3>
@@ -79,7 +111,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomG" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room G</h3>
@@ -87,7 +119,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomY" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room Y</h3>
@@ -95,7 +127,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomZ" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room Z</h3>
@@ -103,7 +135,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomF" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room F</h3>
@@ -111,7 +143,7 @@
                     <p>We'll teach you how to create basic websites using basic HTML5 language which is quite simple to learn</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="roomO" class="box">
                 <img src="./img/roomLbalcony.jpg">
                 <div class="content">
                     <h3>Room O</h3>
