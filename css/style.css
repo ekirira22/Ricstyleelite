@@ -386,10 +386,15 @@ header .highlight, header .current a {
   }
 }
 
-
+#welcomeNote{
+  font-size: 3em;
+}
+#roomL, #roomR, #roomH, #roomG, #roomY, #roomZ, #roomF, #roomO p {
+  
+}
 #showcase {
     min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    background: url('../img/reception-area2.jpg') no-repeat 0 -400px;
     text-align: center;
     color: #ffffff;
 }
@@ -572,5 +577,8 @@ footer {
 @media (max-width: 460px){
   h1 {
     font-size: 1.5em;
+  }
+  #welcomeNote{
+    font-size: 2em;
   }
 }
