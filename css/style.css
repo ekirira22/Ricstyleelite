@@ -390,11 +390,11 @@ header .highlight, header .current a {
   font-size: 3em;
 }
 #roomL, #roomR, #roomH, #roomG, #roomY, #roomZ, #roomF, #roomO p {
-  
+
 }
 #showcase {
     min-height: 400px;
-    background: url('../img/reception-area2.jpg') no-repeat 0 -400px;
+    background: url('../img/showcase.jpg') no-repeat 0 -400px;
     text-align: center;
     color: #ffffff;
 }
