@@ -12,6 +12,10 @@ $(document).ready(function(){
     //remember to change this when hosting the website
     window.location.replace("services.html")
   });
+  $("#gallery").click(function(){
+    //remember to change this when hosting the website
+    window.location.replace("gallery.html")
+  });
 
   // for elevator-wrapper
 

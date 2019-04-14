@@ -478,6 +478,13 @@ article#main-col {
     float: left;
     width: 65%;
 }
+article#main-coll {
+    text-align: center;
+    width: 65%;
+
+    padding-left: 200px;
+
+}
 
 
 /* Services */
